@@ -28,10 +28,10 @@
               <a class="nav-link" href="destinations.html">Destinations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="accomodation.html">Accomodation</a>
+              <a class="nav-link active" aria-current="page" href="accomodation.html">Accomodation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="eateries.html">Eateries</a>
+              <a class="nav-link" href="eateries.html">Eateries</a>
             </li>
           </ul>
         </div>
@@ -39,7 +39,55 @@
     </nav>
   </header>
   <section>
-    
+    <div class="container-md">
+      <div class="row">
+        <div class="col">
+          <h1>Top 10 Hotels</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form action="get" class="city-selector" id="city-selector-restaurants">
+            <select class="form-select" aria-label="Select a city">
+              <option selected>Select a city</option>
+              <option value="london">London</option>
+              <option value="edinburgh">Edinburgh</option>
+              <option value="bath">Bath</option>
+              <option value="brighton">Brighton</option>
+              <option value="bristol">Bristol</option>
+              <option value="cardiff">Cardiff</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="info-box">
+        <div class="row info-box-header">
+          <div class="col">
+            <ul class="top10-list list-inline">
+              <li class="top10-list-item list-inline-item">Restaurant 1</li>
+              <li class="top10-list-item list-inline-item">Restaurant 2</li>
+              <li class="top10-list-item list-inline-item">Restaurant 3</li>
+              <li class="top10-list-item list-inline-item">Restaurant 4</li>
+              <li class="top10-list-item list-inline-item">Restaurant 5</li>
+              <li class="top10-list-item list-inline-item">Restaurant 6</li>
+              <li class="top10-list-item list-inline-item">Restaurant 7</li>
+              <li class="top10-list-item list-inline-item">Restaurant 8</li>
+              <li class="top10-list-item list-inline-item">Restaurant 9</li>
+              <li class="top10-list-item list-inline-item">Restaurant 10</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row info-box-body">
+          <div class="col-sm-12 col-md-6 info-details">
+
+          </div>
+          <div class="col-sm-12 col-md-6 info-map-container">
+            <img src="https://via.placeholder.com/250" class="info-map" alt="placeholder image">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <footer class="container-fluid">
     <div class="fixed-bottom footer">
