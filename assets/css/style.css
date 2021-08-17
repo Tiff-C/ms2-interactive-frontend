@@ -1,7 +1,7 @@
-/** Google Fonts **/
+/******************** Google Fonts ********************/
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Roboto&display=swap');
 
-/** General **/
+/******************** General ********************/
 
 body {
   background-color: #f1f1f1;
@@ -13,10 +13,17 @@ body {
 section {
   position: relative;
   margin-bottom: 15vh;
+  margin-top: 10vh;
 }
 
 nav {
   background-color: #313a33;
+  height: 10vh;
+}
+
+h1 {
+  margin: 1rem;
+  padding-top: 1rem;
 }
 
 .footer {
@@ -36,8 +43,8 @@ a.nav-link {
   color: #e9d2c2;
 }
 
-button.navbar-toggler {
-  color: #e9d2c2;
+.navbar-collapse {
+  background-color: #313a33;
 }
 
 .social-links {
@@ -57,7 +64,7 @@ button a.btn {
   padding: 1rem;
 }
 
-/** index.html **/
+/******************** index.html ********************/
 
 .hero-image {
   height: 80vh;
@@ -69,10 +76,6 @@ button a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.top10-title {
-  margin: 1rem;
 }
 
 div.top10-cards {
@@ -89,3 +92,6 @@ div.card-body {
 .card-img-top{
   max-height: 40vh
 }
+
+/******************** Destinations.html ********************/
+
