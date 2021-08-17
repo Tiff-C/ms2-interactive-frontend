@@ -51,18 +51,23 @@ a.nav-link {
   padding-top: 0.5rem;
 }
 
+.list-inline-item {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
 .social-links-list {
   margin-bottom: 0.5rem;
 }
 
-button a.btn {
+button.btn {
   background-color: #b3a470;
   border: 0.15rem solid #131925;
   color: #f1f1f1;
   font-size: 1rem;
   border-radius: 20px;
-  padding: 1rem;
 }
+
+
 
 /******************** index.html ********************/
 
@@ -76,6 +81,10 @@ button a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+button a.btn {
+  padding: 1rem;
 }
 
 div.top10-cards {
@@ -95,3 +104,20 @@ div.card-body {
 
 /******************** Destinations.html ********************/
 
+.info-box {
+  background-color: #e9d2c2;
+}
+
+.info-box-header {
+  text-align: center;
+}
+
+.top10-list-item {
+
+}
+
+.info-map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
