@@ -1,11 +1,38 @@
 /** Google Fonts **/
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Roboto&display=swap');
 
+/** General **/
+
 body {
-  background-color: whitesmoke;
+  background-color: #f1f1f1;
   font-family: 'Roboto', sans-serif;
+  color: #131925;
 }
 
-footer {
+nav {
+  background-color: #313a33;
+}
+
+.footer {
   text-align: center;
+  background-color: #313a33;
+  color: #e9d2c2;
+  height: 15vh;
+}
+
+.navbar .navbar-brand {
+  color: #e9d2c2;
+  font-family: 'Exo 2', sans-serif;
+}
+
+a.nav-link {
+  color: #e9d2c2;
+}
+
+button.navbar-toggler {
+  color: #e9d2c2;
+}
+
+.social-links {
+  padding-top: 1rem;
 }
