@@ -62,6 +62,16 @@ button.btn {
   color: #f1f1f1;
   font-size: 1rem;
   border-radius: 20px;
+  font-weight: bold;
+}
+
+button.btn:hover {
+  background-color: #313a33;
+  border: 0.15rem solid #131925;
+  color: #b3a470;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 
