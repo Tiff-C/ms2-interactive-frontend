@@ -7,6 +7,12 @@ body {
   background-color: #f1f1f1;
   font-family: 'Roboto', sans-serif;
   color: #131925;
+  font-size: 1rem;
+}
+
+section {
+  position: relative;
+  margin-bottom: 20vh;
 }
 
 nav {
@@ -17,7 +23,8 @@ nav {
   text-align: center;
   background-color: #313a33;
   color: #e9d2c2;
-  height: 15vh;
+  height: 10vh;
+  margin-top: 1rem;
 }
 
 .navbar .navbar-brand {
@@ -34,14 +41,20 @@ button.navbar-toggler {
 }
 
 .social-links {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+}
+
+.social-links-list {
+  margin-bottom: 0.5rem;
 }
 
 button a.btn {
   background-color: #b3a470;
-  border: 0.5rem solid #313a33;
-  color: #313a33;
+  border: 0.15rem solid #131925;
+  color: #f1f1f1;
   font-size: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
 }
 
 /** index.html **/
@@ -56,4 +69,31 @@ button a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+div.top10 {
+  max-height: 60vh;
+  padding-bottom: 20vh;
+  position: relative;
+}
+
+.top10-title {
+  margin: 1rem 1rem 1rem 0;
+}
+
+div.top10-cards {
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 40vh;
+}
+
+div.card-body {
+  color: #f1f1f1;
+  background-color: #b3a470;
+  border: 0.15rem solid #131925;
+  margin-bottom: 15vh;
+}
+
+.card-img-top{
+  height: 40vh
 }
