@@ -36,3 +36,24 @@ button.navbar-toggler {
 .social-links {
   padding-top: 1rem;
 }
+
+button a.btn {
+  background-color: #b3a470;
+  border: 0.5rem solid #313a33;
+  color: #313a33;
+  font-size: 1rem;
+}
+
+/** index.html **/
+
+.hero-image {
+  height: 80vh;
+  background: url(../images/london-at-night.jpg) no-repeat top left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
