@@ -3,32 +3,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
   for (let hotelList of hotelLists) {
     $(this).click(function() {
-      if (hotelList.html() === 'Hotel 1') {
+      if (hotelList.getAttribute('id') === 'hotel-1') {
         displayHotel(0);
-      } else if (hotelList.html() === 'Hotel 2') {
+        console.log('you clicked hotel 1');
+      } else if (hotelList.getAttribute('id') === 'hotel-2') {
         displayHotel(1);
-      } else if (hotelList.html() === 'Hotel 3') {
+        console.log('you clicked hotel 2');
+      } else if (hotelList.getAttribute('id') === 'hotel-3') {
         displayHotel(2);
-      } else if (hotelList.html() === 'Hotel 4') {
+        console.log('you clicked hotel 3');
+      } else if (hotelList.getAttribute('id') === 'hotel-4') {
         displayHotel(3);
-      } else if (hotelList.html() === 'Hotel 5') {
+        console.log('you clicked hotel 4');
+      } else if (hotelList.getAttribute('id') === 'hotel-5') {
         displayHotel(4);
-      } else if (hotelList.html() === 'Hotel 6') {
+        console.log('you clicked hotel 5');
+      } else if (hotelList.getAttribute('id') === 'hotel-6') {
         displayHotel(5);
-      } else if (hotelList.html() === 'Hotel 7') {
+        console.log('you clicked hotel 6');
+      } else if (hotelList.getAttribute('id') === 'hotel-7') {
         displayHotel(6);
-      } else if (hotelList.html() === 'Hotel 8') {
+        console.log('you clicked hotel 7');
+      } else if (hotelList.getAttribute('id') === 'hotel-8') {
         displayHotel(7);
-      } else if (hotelList.html() === 'Hotel 9') {
+        console.log('you clicked hotel 8');
+      } else if (hotelList.getAttribute('id') === 'hotel-9') {
         displayHotel(8);
-      } else if (hotelList.html() === 'Hotel 10') {
+        console.log('you clicked hotel 9');
+      } else if (hotelList.getAttribute('id') === 'hotel-10') {
         displayHotel(9);
+        console.log('you clicked hotel 10');
       }
     })
   };
 })
 
-
+function displayHotel(num) {
+  console.log('index: ' + num);
+}
 
 
 /*
