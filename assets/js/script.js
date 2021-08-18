@@ -39,9 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function displayHotel(num) {
-
+  let index = parseInt(num)
   let infoBox = $('.info-details').html()
-  let hotel = getHotels(city)[num];
+  let city = $('#city-selector').val();
+  let hotels = getHotels(city);
+  let hotel = hotels[index];
   
   infoBox = 
   `<h5>${hotel.name}</h5>
@@ -50,6 +52,17 @@ function displayHotel(num) {
   console.log('index: ' + num);
 }
 
+
+function getHotels(city) {
+  let hotels = allHotels.filter(obj => {
+    return obj.city === city;
+  })
+
+}
+
+
+/*
+space for code that will go into another function:
 function citySelector() {
 
   let city = $('#city-selector').val();
@@ -74,22 +87,5 @@ function citySelector() {
     console.log('Selected City: ' + city);
   } 
 }
-
-function getHotels(city) {
-  let hotels = [];
-
-  for (let allHotel of allHotels) {
-    if (allHotel.city === city) {
-      hotels.push(allHotel);
-    };
-  };
-
-  return hotels;
-}
-
-
-/*
-space for code that will go into another function:
-
 
 */
