@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   for (let hotelList of hotelLists) {
     $(hotelList).click(function() {
+      
+      let listNumber = hotelList.getAttribute('id');
+
+      let index = listNumber[listNumber.length -1];
+
+      displayHotel(index);
+      /*
       if (hotelList.getAttribute('id') === 'hotel-1') {
         displayHotel(0);
         console.log('you clicked hotel 1');
@@ -33,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (hotelList.getAttribute('id') === 'hotel-10') {
         displayHotel(9);
         console.log('you clicked hotel 10');
-      }
+      }*/
     });
   };
 })
@@ -57,7 +64,8 @@ function getHotels(city) {
   let hotels = allHotels.filter(obj => {
     return obj.city === city;
   })
-
+  
+  return hotels;
 }
 
 
