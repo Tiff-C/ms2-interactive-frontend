@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let hotelLists = $('.top10-list-item');
 
   for (let hotelList of hotelLists) {
-    $(this).click(function() {
+    $(hotelList).click(function() {
       if (hotelList.getAttribute('id') === 'hotel-1') {
         displayHotel(0);
         console.log('you clicked hotel 1');
