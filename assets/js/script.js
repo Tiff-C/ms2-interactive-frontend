@@ -39,11 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function displayHotel(num) {
+
+  let infoBox = $('.info-details').html()
+  let hotel = getHotels(city)[num];
+  
+  infoBox = 
+  `<h5>${hotel.name}</h5>
+  <p>${hotel.info}</p>
+  <button><a src="${hotel.url}">Go to hotel website</a></button>`;
   console.log('index: ' + num);
 }
 
 function citySelector() {
-  
+
   let city = $('#city-selector').val();
 
   if (city === 'london') {
@@ -76,20 +84,12 @@ function getHotels(city) {
     };
   };
 
-  console.log(hotels);
+  return hotels;
 }
 
 
 /*
 space for code that will go into another function:
 
-let infoBox = $('.info-details').html()
 
-
-$(hotelList).click(function() {
-  infoBox = 
-  `<h5>${hotel.name}</h5>
-  <p>${hotel.info}</p>
-  <button><a src="${hotel.url}">Go to hotel website</a></button>`;
-}); 
 */
