@@ -43,24 +43,40 @@ function displayHotel(num) {
 }
 
 function citySelector() {
+  
   let city = $('#city-selector').val();
 
   if (city === 'london') {
-    getLondonHotels();
+    getHotels(london);
     console.log('Selected City: ' + city);
-  };
+  } else if (city === 'edinburgh') {
+    getHotels(edinburgh);
+    console.log('Selected City: ' + city);
+  } else if (city === 'bath') {
+    getHotels(bath);
+    console.log('Selected City: ' + city);
+  } else if (city === 'brighton') {
+    getHotels(brighton);
+    console.log('Selected City: ' + city);
+  } else if (city === 'bristol') {
+    getHotels(bristol);
+    console.log('Selected City: ' + city);
+  } else if (city === 'cardiff') {
+    getHotels(cardiff);
+    console.log('Selected City: ' + city);
+  } 
 }
 
-function getLondonHotels() {
-  let londonHotels = [];
+function getHotels(city) {
+  let hotels = [];
 
-  for (let hotel of hotels) {
-    if (hotel.city === 'london') {
-      londonHotels.push(hotel);
+  for (let allHotel of allHotels) {
+    if (allHotel.city === city) {
+      hotels.push(allHotel);
     };
   };
 
-  console.log(londonHotels);
+  console.log(hotels);
 }
 
 

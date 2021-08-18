@@ -1,4 +1,4 @@
-let hotels = [
+let allHotels = [
   {
     "city": "london",
     "name": "The Resident Covent Garden",
