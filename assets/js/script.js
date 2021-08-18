@@ -34,12 +34,33 @@ document.addEventListener('DOMContentLoaded', function() {
         displayHotel(9);
         console.log('you clicked hotel 10');
       }
-    })
+    });
   };
 })
 
 function displayHotel(num) {
   console.log('index: ' + num);
+}
+
+function citySelector() {
+  let city = $('#city-selector').val();
+
+  if (city === 'london') {
+    getLondonHotels();
+    console.log('Selected City: ' + city);
+  };
+}
+
+function getLondonHotels() {
+  let londonHotels = [];
+
+  for (let hotel of hotels) {
+    if (hotel.city === 'london') {
+      londonHotels.push(hotel);
+    };
+  };
+
+  console.log(londonHotels);
 }
 
 
@@ -48,12 +69,11 @@ space for code that will go into another function:
 
 let infoBox = $('.info-details').html()
 
-for (let hotel of hotels) {
-      $(hotelList).click(function() {
-        infoBox = 
-        `<h5>${hotel.name}</h5>
-        <p>${hotel.info}</p>
-        <button><a src="${hotel.url}">Go to hotel website</a></button>`;
-      }); 
-    }
+
+$(hotelList).click(function() {
+  infoBox = 
+  `<h5>${hotel.name}</h5>
+  <p>${hotel.info}</p>
+  <button><a src="${hotel.url}">Go to hotel website</a></button>`;
+}); 
 */
