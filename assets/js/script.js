@@ -1,20 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
+  
+
   let hotelLists = $('.top10-list-item');
 
   for (let hotelList of hotelLists) {
     $(hotelList).click(function() {
+      let city = $('#city-selector').val()
       
       let listNumber = hotelList.getAttribute('id');
 
       let index = listNumber[listNumber.length -1];
 
-      displayHotel(index);
+      displayHotel(city, index);
       
     });
   };
+
+  displayHotel('london', 0);
+
 })
 
 function getHotels(city) {
+  
+
   let hotels = allHotels.filter(obj => {
     return obj.city === city;
   })
@@ -22,19 +30,25 @@ function getHotels(city) {
   return hotels;
 }
 
-function displayHotel(num) {
 
-  let city = $('#city-selector').val();
-  let hotels = getHotels(city);
-  let hotel = hotels[num];
+function displayHotel(city, index) {
   
-  let hotelName = hotel.name;
-  let hotelInfo = hotel.info;
-  let hotelUrl = hotel.url;
+  let hotels = getHotels(city)
+  let hotelDetails = [];
 
-  $('#info-detials-hotel').html(`<h2>${hotelName}</h2>
-  <p>${hotelInfo}</p>
-  <button class="btn"><a href="${hotelUrl}" target='_blank'>Go to hotel website</a></button>`);
+  for (let hotel of hotels) {
+    let hotelName = hotel.name;
+    let hotelInfo = hotel.info;
+    let hotelUrl = hotel.url;
+
+    hotelDetails.push(`<h2>${hotelName}</h2>
+    <p>${hotelInfo}</p>
+    <button class="btn"><a href="${hotelUrl}" target='_blank'>Go to hotel website</a></button>`);
+  };
+
+  $('#info-detials-hotel').html(hotelDetails[index]);
+
+
 
 }
 

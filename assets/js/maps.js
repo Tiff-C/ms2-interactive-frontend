@@ -7,7 +7,8 @@ function initMap() {
   });
 }
 
+/*
 let marker = new google.maps.Marker({
   position: myLatlng,
   title:"Hello World!"
-});
+}); */

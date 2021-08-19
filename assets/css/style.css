@@ -123,10 +123,15 @@ div.card-body {
   text-align: center;
 }
 
+.info-map-container{
+  padding: auto 1rem auto 1rem;
+}
+
+#info-detials-hotel {
+  padding: 1rem;
+}
 
 div#map {
   min-height: 360px;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
 }
 
