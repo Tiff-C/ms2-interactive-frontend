@@ -6,3 +6,8 @@ function initMap() {
     zoom: 8,
   });
 }
+
+let marker = new google.maps.Marker({
+  position: myLatlng,
+  title:"Hello World!"
+});
