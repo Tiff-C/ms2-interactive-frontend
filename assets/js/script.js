@@ -24,18 +24,39 @@ function getHotels(city) {
 
 function displayHotel(num) {
   let index = parseInt(num)
-  let infoBox = $('#info-detials-hotel');
-  infoBox.innerHTML = '';
+  let infoBox = $('#info-detials-hotel').html();
+  // infoBox.innerHTML = '';
   let city = $('#city-selector').val();
   let hotels = getHotels(city);
   let hotel = hotels[index];
   
-  infoBox.innerHTML = 
-  `<h2>${hotel.name}</h2>
-  <p>${hotel.info}</p>
-  <button><a src="${hotel.url}">Go to hotel website</a></button>`;
+  let hotelName = hotel.name;
+  let hotelInfo = hotel.info;
+  let hotelUrl = hotel.url;
+    console.log(infoBox);
 
-  return infoBox;
+  infoBox = 
+    `<h2>${hotelName}</h2>
+    <p>${hotelInfo}</p>
+    <button><a src="${hotelUrl}">Go to hotel website</a></button>`;
+  // console.log(infoBox)
+  
+  // return;
 }
 
 
+/*
+  if (city === undefined) {
+    alert('Please select a City');
+  } else {
+    let hotelName = hotel.name;
+    let hotelInfo = hotel.info;
+    let hotelUrl = hotel.url;
+    
+    infoBox.innerHTML = 
+    `<h2>${hotelName}</h2>
+    <p>${hotelInfo}</p>
+    <button><a src="${hotelUrl}">Go to hotel website</a></button>`;
+
+    return ;
+  } */
