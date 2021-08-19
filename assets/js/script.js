@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let index = listNumber[listNumber.length -1];
 
       displayHotel(city, index);
-      
+      displayMapMarker(city, index);
     });
   };
 
@@ -34,7 +34,7 @@ function getHotels(city) {
 
 function displayHotel(city, index) {
   
-  let hotels = getHotels(city)
+  let hotels = getHotels(city);
   let hotelDetails = [];
   
 
@@ -47,23 +47,27 @@ function displayHotel(city, index) {
     <p>${hotelInfo}</p>
     <button class="btn"><a href="${hotelUrl}" target='_blank'>Go to hotel website</a></button>`);
     
-    displayMapMarker(hotel);
   };
 
   $('#info-detials-hotel').html(hotelDetails[index]);
   
 }
 
-function displayMapMarker(hotel){
+function displayMapMarker(city , index){
+
+  let hotels = getHotels(city);
   let lat;
   let lng;
 
-  let marker = new google.maps.LatLng(lat,lng);
+  //let marker = new google.maps.LatLng(lat,lng);
   
-  lat = hotel.latitude;
-  lng = hotel.longitude;
-
-  marker.maps(map);
+  for (let hotel of hotels) {
+    lat = hotel.Latitude;
+    lng = hotel.Longitude;
+  }
+  
+  console.log(lat,lng);
+  //marker.maps(map);
 }
 
 
