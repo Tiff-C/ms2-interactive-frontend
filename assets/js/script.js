@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 })
 
+function getHotels(city) {
+  let hotels = allHotels.filter(obj => {
+    return obj.city === city;
+  })
+  
+  return hotels;
+}
+
 function displayHotel(num) {
   let index = parseInt(num)
   let infoBox = $('.info-details').html()
@@ -60,13 +68,7 @@ function displayHotel(num) {
 }
 
 
-function getHotels(city) {
-  let hotels = allHotels.filter(obj => {
-    return obj.city === city;
-  })
-  
-  return hotels;
-}
+
 
 
 /*
