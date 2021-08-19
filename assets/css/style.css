@@ -109,7 +109,7 @@ div.card-body {
   max-height: 40vh
 }
 
-/******************** Destinations.html ********************/
+/******************** accomodation.html ********************/
 
 .info-box {
   background-color: #e9d2c2;
@@ -119,12 +119,8 @@ div.card-body {
   text-align: center;
 }
 
-.top10-list-item {
 
+div#map {
+  min-height: 360px;
 }
 
-.info-map {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
