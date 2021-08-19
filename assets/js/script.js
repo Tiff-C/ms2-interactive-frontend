@@ -55,16 +55,17 @@ function getHotels(city) {
 
 function displayHotel(num) {
   let index = parseInt(num)
-  let infoBox = $('.info-details').html()
+  let infoBox = $('#info-detials-hotel');
+  infoBox.innerHTML = '';
   let city = $('#city-selector').val();
   let hotels = getHotels(city);
   let hotel = hotels[index];
   
-  infoBox = 
-  `<h5>${hotel.name}</h5>
+  infoBox.innerHTML = 
+  `<h2>${hotel.name}</h2>
   <p>${hotel.info}</p>
   <button><a src="${hotel.url}">Go to hotel website</a></button>`;
-  console.log('index: ' + num);
+  console.log(infoBox);
 }
 
 

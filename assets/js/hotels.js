@@ -160,7 +160,7 @@ let allHotels = [
     "info": "Opulence, theatre and luxury are combined in this unique 5-star hotel in one of Edinburgh's finest historic buildings. Just five minutes from Edinburgh city centre, James Thomson's Prestonfield House is Edinburgh's most exclusive luxury hotel, offering the privacy and seclusion of a country estate right in the heart of Edinburgh.\n60 years after Prestonfield House changed from a private home to a luxury hotel, it remains one of the most recognisable 5 Star hotels in Scotland. Situated within 20 acres of gardens and located next to the stunning Arthur's Seat, you wouldn't know we're only five minutes from the bustling life of Edinburgh’s city centre.\nStep inside Prestonfield House with its unique rooms, distinguished heritage, and true 5-star atmosphere. No room is alike, each room features unique antique furniture such as a comfortable seating area, a desk, a collection of antiques and characterful feature beds dressed with fine linens and piled high with cushions.\n If you're in Edinburgh, join us for an indulgent afternoon tea in the most wonderful setting in the city."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "Dukes Bath",
     "address": "Great Pulteney Street",
     "postcode": "BA2 4DN",
@@ -168,7 +168,7 @@ let allHotels = [
     "info": "At Dukes | Bath we offer our guests the chance to stay at one of the city’s most prestigious street addresses. This beautiful boutique 17 bedroom Guest House occupies two magnificent Georgian Townhouses on Great Pulteney Street, one of the finest boulevards in England.\nDukes | Bath specialises in exceptional service and a sensational breakfast. Known more simply as ‘Dukes’, it is our reputation and emphasis on service and unforced hospitality, towards all guests, that rests at the heart of this wonderful property.\nWhether it is the high ceilings, sash windows or hand crafted Sanitan bathroom suites, each of our rooms uniquely reflects an era of craftsmanship, Georgian elegance and charm.\n We provide accommodation in relaxed and comfortable surroundings and our 17 guest rooms include a choice of Snug Doubles, Standard Doubles, Superior Doubles, Deluxe Suites or sumptuous Four Poster rooms."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "The Roseate Villa",
     "address": "Henrietta Road",
     "postcode": "BA2 6LX",
@@ -176,7 +176,7 @@ let allHotels = [
     "info": "The Roseate Villa Bath encompasses 2 converted Victorian houses which have had a characterful legacy. A warm welcome with tea and cakes, exemplary service, attention to detail and a genuine connection with every guest makes their experience a very memorable one.\nThe Roseate offers undivided attention to its guests with everything that the city has to offer whether it is the tour of the Roman Baths and Regency Crescent or the views of Prior Park, Jane Austen Museum and the grandeur of Bath Abbey. A boutique hotel positioned just five minutes away from the heart of the city,\n The Roseate Villa Bath exudes a feeling of serenity in and around its estate and offers wholehearted assistance to its guests who are either seeking informative excursions around the city or are in the mood for a nonchalant weekend getaway."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "Bathen House",
     "address": "88 Newbridge Hill",
     "postcode": "BA1 3QA",
@@ -184,7 +184,7 @@ let allHotels = [
     "info": "Bathen House is pleased to extend you a warm welcome to one of the city's most luxurious and tranquil venues. \nHaving recently undergone extensive redevelopment, our Edwardian property now offers an enticing range of elegant rooms and suites to help transport you to the sumptuous and relaxing haven you deserve.\nGuests can enjoy stylish and spacious bathrooms, a full range of bespoke bedroom furnishings, a large and relaxing communal lounge, a comfortable orangery dining room, as well as an enticing range of outstanding food & beverage.\nIf you have an enquiry of any kind then we will be more than happy to assist you!"
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "Hotel Indigo",
     "address": "SOUTH PARADE",
     "postcode": "BA2 4AB",
@@ -192,7 +192,7 @@ let allHotels = [
     "info": "Set in a beautiful honey coloured Georgian terrace is the boutique Hotel Indigo Bath.\nGrade one listed our building is steeped in history and sits in the peaceful street of South Parade, yet you are just steps away from the centre of Bath. Surrounded by culture Bath is famous for romance, literature and historic architecture; our boutique hotel is a great base to explore this wonderful city.\nOur 166 rooms have been perfectly designed with you and the city in mind. Modern and stylish they reflect the influences of the architects and novelists who made Bath famous for its story telling and passionate social scene.\nJust a stone’s throw away from the Bath Abbey, Roman Baths and Pulteney Bridge, guests can explore the historic sights whilst enjoying the modern day inspirational galleries, street performers, and fantastic array of individual shops. Let us inspire you to walk along the wide Georgian streets made for carriages up to The Royal Crescent. \nAfter exploring take a relaxing dip in the hot spa waters of the original Roman Baths which give Bath its UNESCO World Heritage status."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "Hiding Space Westgate Apartments",
     "address": "4-5 Westgate Buildings",
     "postcode": "BA1 1EB",
@@ -200,7 +200,7 @@ let allHotels = [
     "info": "Situated in the centre of Bath, only 100 yards from the Thermae Spa, Westgate Apartments is a collection of studio apartments. These Scandinavian style apartments offer open plan living with contemporary furnishings and the option of a sofa bed for additional guests.\nWhether you are looking for a holiday, a weekend break, business accommodation or a self-catered home from home for extended periods, Hiding Space provides luxurious living in the heart of our beautiful city."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "Harington’s Hotel",
     "address": "8-10 Queen Street",
     "postcode": "BA1 1HE",
@@ -208,7 +208,7 @@ let allHotels = [
     "info": "Welcome to Harington’s Hotel in central Bath – a boutique hotel whose city centre location oozes high quality and luxury accommodation by the bucket load. Our unique hotel is tucked away on an oh-so-traditional cobbled side street that echoes Bath’s Roman heritage. We offer a range of stylish rooms along with self-catered city centre apartments.\nWe are one of just a few luxury hotels in Bath that strike the perfect balance between seclusion and city centre proximity. The hotel is, quite literally, just a stones throw from must-see attractions and must-try eateries. \nYou can see the Jane Austen tours float past our very windows while the Roman Baths, Thermae Spa and Bath University are all but a stroll away. The heart of Bath really is right on our doorstep."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "THE BIRD",
     "address": "18-19 Pulteney Road",
     "postcode": "BA2 4EZ",
@@ -216,7 +216,7 @@ let allHotels = [
     "info": "We are a dazzling boutique hotel with a totally fabulous atmosphere in the centre of Bath. Colourful, with  bold designs and statement artwork, we have fashioned a uniquely creative and lively atmosphere.\nNestled within a quiet residential neighbourhood, we thrive on the peace and tranquility being a stones throw from the city centre allows.\nhere are 31 bedrooms at The Bird, from compact, comfy doubles all the way up to our rather fabulous hot tub feature room.\nEach one tells its own story, through hand-crafted wallpaper, unique artwork, dramatic designs and knock out views over Bath and beyond."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "The Royal Crescent Hotel & Spa",
     "address": "16 Royal Crescent",
     "postcode": "BA1 2LS",
@@ -224,7 +224,7 @@ let allHotels = [
     "info": "An iconic sanctuary in the city set in an acre of glorious gardens. A sensational spa for a blissful escape and beautiful bedrooms, each one uniquely designed with spectacular views.\nEvery inch of our hotel is underpinned by impeccable service, delivered by staff dedicated to making your stay unforgettable.\nwith a prestigious history that spans more than 250 years, we are one of the only landmark buildings in the world you can sleep in."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "THE QUEENSBERRY HOTEL",
     "address": "RUSSEL STREET",
     "postcode": "BA1 2QF",
@@ -232,7 +232,7 @@ let allHotels = [
     "info": "Bath Hotels such as ours are few and far between; if you are looking for luxury and impeccable service, and bold, individual style, housed in a characterful Georgian townhouse, right in the centre of our stunning, little city, then you are absolutely in the right place.\nAnd that’s not all, we are also home to the only Michelin-starred Restaurant in Bath, so before you ascend the stairs of an evening for your restful slumber, our Executive Head Chef, Chris Cleghorn will ensure the most impeccable dining experience in a relaxed setting, proudly showcasing the absolute best of the local provenance."
   },
   {
-    "city": "Bath",
+    "city": "bath",
     "name": "No.15 Great Pulteney",
     "address": "13-15 Great Pulteney Street",
     "postcode": "BA2 4BS",
