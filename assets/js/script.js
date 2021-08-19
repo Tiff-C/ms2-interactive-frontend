@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let index = listNumber[listNumber.length -1];
 
       displayHotel(city, index);
-      displayMapMarker(city);
+      initMap();
     });
   };
 
@@ -56,17 +56,17 @@ function displayHotel(city, index) {
 
 function displayMapMarker(city){
   let hotels = getHotels(city);
-    let lat;
-    let lng;
+    let myLat;
+    let myLng;
 
     for (let hotel of hotels) {
-      lat = hotel.Latitude;
-      lng = hotel.Longitude;
+      myLat = hotel.Latitude;
+      myLng = hotel.Longitude;
     }
 
-    console.log(lat,lng);
+    console.log(typeof(myLat,myLng));
 
-    return lat, lng;
+    return myLat, myLng;
 }
 
 

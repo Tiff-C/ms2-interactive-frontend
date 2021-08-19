@@ -2,9 +2,24 @@
   let map;
 
   function initMap() {
+
+    let myLatLng = {};
+    
     let city = $('#city-selector').val();
-    displayMapMarker(city);
-    let myLatLng = { lat , lng };
+    let hotels = getHotels(city);
+    let myLat;
+    let myLng;
+
+    for (let hotel of hotels) {
+      myLat = hotel.Latitude;
+      myLng = hotel.Longitude;
+    }
+
+    console.log(typeof(myLat,myLng));
+
+    myLatLng.lat = parseInt(myLat);
+    myLatLng.lng = parseInt(myLng);
+
     let map = new google.maps.Map(document.getElementById("map"), {
       zoom: 4,
       center: myLatLng,
