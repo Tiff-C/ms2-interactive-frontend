@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let index = listNumber[listNumber.length -1];
 
       displayHotel(city, index);
-      displayMapMarker(city, index);
+      displayMapMarker(city);
     });
   };
 
@@ -48,26 +48,25 @@ function displayHotel(city, index) {
     <button class="btn"><a href="${hotelUrl}" target='_blank'>Go to hotel website</a></button>`);
     
   };
-
+  
+  displayMapMarker(city);
   $('#info-detials-hotel').html(hotelDetails[index]);
   
 }
 
-function displayMapMarker(city , index){
-
+function displayMapMarker(city){
   let hotels = getHotels(city);
-  let lat;
-  let lng;
+    let lat;
+    let lng;
 
-  //let marker = new google.maps.LatLng(lat,lng);
-  
-  for (let hotel of hotels) {
-    lat = hotel.Latitude;
-    lng = hotel.Longitude;
-  }
-  
-  console.log(lat,lng);
-  //marker.maps(map);
+    for (let hotel of hotels) {
+      lat = hotel.Latitude;
+      lng = hotel.Longitude;
+    }
+
+    console.log(lat,lng);
+
+    return lat, lng;
 }
 
 
