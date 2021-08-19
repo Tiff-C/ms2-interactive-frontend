@@ -34,8 +34,8 @@ function displayHotel(num) {
 
   $('#info-detials-hotel').html(`<h2>${hotelName}</h2>
   <p>${hotelInfo}</p>
-  <button><a src="${hotelUrl}">Go to hotel website</a></button>`);
-  
+  <button class="btn"><a href="${hotelUrl}" target='_blank'>Go to hotel website</a></button>`);
+
 }
 
 
