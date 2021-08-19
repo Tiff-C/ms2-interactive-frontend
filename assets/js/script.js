@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
 
+
   displayHotel('london', 0);
 
 })
@@ -35,21 +36,32 @@ function displayHotel(city, index) {
   
   let hotels = getHotels(city)
   let hotelDetails = [];
+  let hotelLatLng = {};
 
   for (let hotel of hotels) {
     let hotelName = hotel.name;
     let hotelInfo = hotel.info;
     let hotelUrl = hotel.url;
+    hotelLatLng.lan = hotel.latitude;
+    hotelLatLng.lng = hotel.longitude;
 
     hotelDetails.push(`<h2>${hotelName}</h2>
     <p>${hotelInfo}</p>
     <button class="btn"><a href="${hotelUrl}" target='_blank'>Go to hotel website</a></button>`);
+
   };
 
   $('#info-detials-hotel').html(hotelDetails[index]);
+  
+  displayMapMarker(hotelLatLng)
+}
 
+function displayMapMarker(hotelLatLng){
+  let marker = new google.maps.Marker({
+    position: hotelLatLng,
+  }); 
 
-
+  marker.maps(map);
 }
 
 
