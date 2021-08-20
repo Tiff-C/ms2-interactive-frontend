@@ -45,38 +45,44 @@
           <h1>Top 10 Hotels</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <form action="get" class="city-selector">
-            <label for="city-selector">Please select a city:</label>
-            <select class="form-select" aria-label="Select a city" id="city-selector">
-              <option class="select-city" id="select-city">Select a city</option>
-              <option class="select-city" selected value="london" id="london">London</option>
-              <option class="select-city" value="edinburgh">Edinburgh</option>
-              <option class="select-city" value="bath">Bath</option>
-              <option class="select-city" value="brighton">Brighton</option>
-              <option class="select-city" value="bristol">Bristol</option>
-              <option class="select-city" value="cardiff">Cardiff</option>
-            </select>
-          </form>
-        </div>
-      </div>
+      
       <div class="info-box">
-        <div class="row info-box-header">
+        <div class="row">
           <div class="col">
-            <ul class="top10-list list-inline">
-              <li class="top10-list-item list-inline-item" id="hotel-0">1</li>
-              <li class="top10-list-item list-inline-item" id="hotel-1">2</li>
-              <li class="top10-list-item list-inline-item" id="hotel-2">3</li>
-              <li class="top10-list-item list-inline-item" id="hotel-3">4</li>
-              <li class="top10-list-item list-inline-item" id="hotel-4">5</li>
-              <li class="top10-list-item list-inline-item" id="hotel-5">6</li>
-              <li class="top10-list-item list-inline-item" id="hotel-6">7</li>
-              <li class="top10-list-item list-inline-item" id="hotel-7">8</li>
-              <li class="top10-list-item list-inline-item" id="hotel-8">9</li>
-              <li class="top10-list-item list-inline-item" id="hotel-9">10</li>
-            </ul>
+            <form action="get" class="city-selector">
+              <div class="col-sm-3">
+                <label for="city-selector" class="">Select a City</label>
+              </div>
+              <div class="col-sm-3">
+                <select class="form-select" aria-label="Select a city" id="city-selector">
+                  <option class="select-city" id="select-city">Select a city</option>
+                  <option class="select-city" selected value="london" id="london">London</option>
+                  <option class="select-city" value="edinburgh">Edinburgh</option>
+                  <option class="select-city" value="bath">Bath</option>
+                  <option class="select-city" value="brighton">Brighton</option>
+                  <option class="select-city" value="bristol">Bristol</option>
+                  <option class="select-city" value="cardiff">Cardiff</option>
+                </select>
+              </div>
+              <div class="col-sm-6 info-box-header">
+                <ul class="top10-list list-inline">
+                  <li class="top10-list-item list-inline-item" id="hotel-0">1</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-1">2</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-2">3</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-3">4</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-4">5</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-5">6</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-6">7</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-7">8</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-8">9</li>
+                  <li class="top10-list-item list-inline-item" id="hotel-9">10</li>
+                </ul>
+              </div>
+            </form>
           </div>
+        </div>
+        <div class="row">
+          
         </div>
         <hr>
         <div class="row info-box-body">

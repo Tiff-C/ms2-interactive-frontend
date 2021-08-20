@@ -21,12 +21,20 @@ nav {
 }
 
 h1 {
-  margin: 1rem;
-  padding-top: 1rem;
+  margin: 1rem 1rem 1rem 0;
 }
 
 h2 {
   font-size: 1.5em;
+}
+
+l, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+form {
+  display: flex;
 }
 
 .footer {
@@ -163,6 +171,10 @@ div.card-body {
 
 .info-box {
   background-color: #e9d2c2;
+}
+
+.form-select {
+  width: max-content;
 }
 
 .info-box-header {
