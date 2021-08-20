@@ -86,6 +86,8 @@ It will be an interactive site that responds to the user with content that is di
 
   * My full development process and testing can be seen in my commit messages. 
 
+  * Both CSS and HTML have been passed through validator, only CSS errors present are from Bootstrap and only one error where `<a></a>` is a descendant of `<button></button>`.
+
   * ### Deployment
     
     * I encountered no unexpected errors upon deployment of my site. 
