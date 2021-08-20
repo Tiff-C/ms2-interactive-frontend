@@ -1,104 +1,82 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lux Stays UK Website
 
-Welcome Tiff-C,
+[View the deployed project here.](https://tiff-c.github.io/ms2-interactive-frontend/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+The goal for this project is to create a travel site that promotes staycations for Adult British residents across six major UK Cities; London, Edinburgh, Bath, Brighton, Bristol, Cardiff. The site will also provide customer base growth through repeat users of the site.
 
-## Gitpod Reminders
+It will be an interactive site that responds to the user with content that is direct and to the point to allow for ease of use. It should feel simple and easy for first time users to get to the information they need with links/integration to services the user may require during their trip as well as potential ways to get there. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX Design
 
-`python3 -m http.server`
+* ### User Stores
 
-A blue button should appear to click: _Make Public_,
+  * As a user I want... 
+    1. To be able to use the website with ease on my first use
+    1. To find out information about the different places I can stay and the types of accommodation and activities available.
+    1. See pictures of the different regions, maps and user reviews to help me decide where to stay
+    1. Links to booking websites for accommodation and indoor and outdoor activities so I can book my trip when I have decided where to stay.
+    1. To be able to search for all locations that offer a specific activity I want and to be able to share the results of this search with other members of my travel party.
+    1. To get updates about new attractions opening up and local accommodations in the area.
 
-Another blue button should appear to click: _Open Browser_.
+* ### Potential Features
+  
+  * using the user stories above I created a list of 11 potential features to include in the project. I have included a table below to outline thease features. 
+  [A copy of the original document can be seen here.](https://docs.google.com/spreadsheets/d/1XYvuyTWF1FxwnLfmtv338TL2NEqvYrcvG86dHjPBN8o/edit?usp=sharing)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  Feature | User Story | Acceptance Criteria | Included in MVP
+  ------- | ---------- | ------------------- | --------------
+  1 | 1 | Use a simple layout conforming to standard conventions that allow the user to use the site intuitively on their first use. Using icons, clear to read fonts on backgrounds that do not obscure the text. | Yes, across site.
+  2 | 1 | Providing a call to action on the landing page that will take them to a search feature. | Yes, takes users to destinations.html
+  3 | 1 | Having a list of the regions on the landing page to allow the user to easily find a location if they have one in mind for their trip. | Yes, but on it's own page
+  4 | 2 | Use the Sygic travel API to access information on UK tours, hotels, places and popular trips. Display this information on the site by accessing the dom using javaScript and inserting the results onto the web page. | No, not viable enough with given time frame
+  5 | 3 | Use high quality images across the site along with descriptions of each region that provide information about the types of activities I can take part in within that region. | Yes, all apart from accomodation.html
+  6 | 3 | Use google maps API to display a map of the area the user is currently viewing. | Yes, on accomodation.html
+  7 | 3 | Use the ratings provided by Sygic travel API to give users a rating out of five stars for the attractions/accommodation in the area as well as a rating of the area itself. | No, not viable enough with given time frame
+  8 | 4 | Provide links to booking websites for accommodation and all activities for each region and specific areas within that region such as popular cities. | Yes, links to hotel sites included
+  9 | 5 | Provide a search/filter function that allows the user to search by region or activity type using the tags and categories provided by the Sygic API. | No, not viable enough with given time frame
+  10 | 5 | Use the ‘Get’ method for the search function that will allow the user to share the results of their search with other members of their travel party. | N/A, sub feature of feature 9.
+  11 | 6 | Provide a sign up to newsletter call to action that will keep users up to date with new attractions, accommodation etc. | No, whilst viable, not important enough to include in MVP with given time frame.
 
-A blue button should appear to click: _Make Public_,
+  * As can be seen in the [original document](https://docs.google.com/spreadsheets/d/1XYvuyTWF1FxwnLfmtv338TL2NEqvYrcvG86dHjPBN8o/edit?usp=sharing). The sum of the importance of the features when listed 1-5 *(5 being most important)* is **41**. The average viability of the `features * number-of-features` also equals **41**. This meant it would be feasable to include all features in the project if time was no issue. However as there was a time constraint for the project I opted to not include any of the Sygic API features as I felt using an API for the first time during a project would be an irresponsible use of time.
+  * I also opted to not include feature 11 in my MVP as the feature to get updates isn't as relevant to the other features being included. This can be seen in the wireframes attached below.
 
-Another blue button should appear to click: _Open Browser_.
+* ### Information Architecture
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  * With an idea of the features that will be included in the MVP I was able to move onto thinking about the information architecture of the site. 
+  * During this plane of UX I created the below Site Map that shows the main index.html with three other pages; destinations.html, accomodation.html and eateries.html.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  ![Image of Site Map](/assets/images/site-map.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  * As I am not using the Sygic API I will be compiling a list of top 10 hotels and restaurants for each city into a google sheet and then exporting this as a JSON file that I will be able to consume to display the relevant details on accomodation.html and eateries.html.
 
-------
+* ### User Journey
 
-## Release History
+  * During the later part of the design process I envisioned the following user journeys when using the site.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  * #### First time visitor:
+    
+    1. The user arrives on landing page and sees call to action `Choode your destination` button. The user clicks the CTA.
+    1. The user arrives on destinations.html, they view the six cities about info and image.
+    1. Upon choosing a city the user can then view the accomodation page. This page is responsive to the user and loads with the first city's first hotel being displayed to allow the user to easily understand the interface. They will be able to see info about the hotel and a map with the hotels location marker being displayed.
+    1. Once the user has decided on a hotel they can click the CTA `Go to hotel website`. This will open a new tab in the browser ensuring the user can continue on their journey through the site uninterrupted.
+    1. *Optional*: The user can then view the top 10 restaurants available in their chosen city via eateries.html. The user will be able to go to restaurant site in the same way as with the hotels.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  * #### Returning visitor:
+    
+    1. On returning to the site the user can either navigate to their intended destination via the navbar or via the cards under `<h1>Know where you want to stay?</h1>`. 
+    1. The user can continue on in their journey the same way as the first use.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* ### Wireframes
+  
+  * #### index.html wireframe - [view](assets/images/index.png)
+  * #### destinations.html wireframe - [view](assets/images/destinations.png)
+  * #### accomodation.html wireframe - [view](assets/images/accomodation.png)
+  * #### eateries.html wireframe - [view](assets/images/eateries.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* ### Colour Scheme
+  
+  * As this is a site for luxury travel I wanted to use colours that represent luxury. I found [this colour palette](https://drive.google.com/file/d/11uv4--fLZgmWbeZhUF9di_1vYKSjGIx8/view?usp=sharing) and felt it would work well with my project. (*Source of colour scheme credited below*).
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
