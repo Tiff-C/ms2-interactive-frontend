@@ -80,3 +80,58 @@ It will be an interactive site that responds to the user with content that is di
   * As this is a site for luxury travel I wanted to use colours that represent luxury. I found [this colour palette](https://drive.google.com/file/d/11uv4--fLZgmWbeZhUF9di_1vYKSjGIx8/view?usp=sharing) and felt it would work well with my project. (*Source of colour scheme credited below*).
 
 
+* ## Development
+
+  * During the development of my site I realised the amount of time it would take to get the data for the hotels and restuarunts. Due to this I have decided to remove the eateires.html page from the MVP as I only had time to get data for the London restaurants.
+
+  * My full development process and testing can be seen in my commit messages. 
+
+  * ### Deployment
+    
+    * I encountered no unexpected errors upon deployment of my site. 
+
+
+* ## Features
+
+  * In addition to the features outlined above the site is:
+    * Fully responses on all device sizes. 
+    * Interactive 
+
+  * ### Languages Used:
+   
+    * CSS
+    * HTML
+    * JavaScript
+
+  * ### Frameworks, Libraries and Programs Used:
+
+    * #### Bootstrap 5.1.0
+      * Bootstrap was used to allow speedy creation of HTML Elements
+    * #### Google Fonts
+      * Google fonts was used to import the Roboto and Exo 2 fonts into the project.
+    * #### Font Awesome
+      * Used my FontAwesome kit to easily add social icons to footer
+    * #### jQuery 
+      * used to allow for quick manpulation of DOM elements.
+    * #### Google Drive / Docs
+      * For storing project files before upload to project.
+    * #### Google app: [Export Sheet Data](https://workspace.google.com/marketplace/app/export_sheet_data/903838927001)
+      * Used to export sheets data as JSON file.
+    * #### Git
+      * For version control
+    * #### GitHub 
+      * To store my project in an online Repository
+    * #### GitPod
+     * IDE used to develop site
+    * #### Balsamiq
+      * To build wireframes
+
+
+* ## Content Sources:
+  
+  * ### [destinations info](https://www.visitbritain.com/gb/en)
+  * ### [images](https://www.pxfuel.com/en/search?q=london)
+  * ### [Hotels](https://www.tripadvisor.co.uk/)
+  * ### [Lat and Long (for map markers)](https://www.freemaptools.com/convert-uk-postcode-to-lat-lng.html)
+
+
