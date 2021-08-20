@@ -20,12 +20,23 @@ nav {
   height: 10vh;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
 h1 {
   margin: 1rem 1rem 1rem 0;
 }
 
 h2 {
   font-size: 1.5em;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 l, ol, ul {
@@ -35,6 +46,13 @@ l, ol, ul {
 
 form {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+label {
+  margin-right: 0.5rem;
 }
 
 .footer {
@@ -76,27 +94,41 @@ a.nav-link {
   margin-left: 0;
 }
 
+.page{
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+
 .legal-info p {
   margin-bottom: 0;
 }
 
-
 button.btn {
+  padding: 0;
+}
+
+button.btn a {
   background-color: #b3a470;
   border: 0.15rem solid #131925;
   color: #f1f1f1;
   font-size: 1rem;
   border-radius: 20px;
   font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
-button.btn:hover {
+button.btn a:hover {
   background-color: #313a33;
   border: 0.15rem solid #131925;
   color: #b3a470;
   font-size: 1rem;
   border-radius: 20px;
   font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 
@@ -179,17 +211,15 @@ div.card-body {
 
 .info-box-header {
   text-align: center;
+  margin: 0;
+  background-color: #313a33;
+  color: #f1f1f1;
 }
 
-.info-map-container{
-  padding: auto 1rem auto 1rem;
-}
 
-#info-detials-hotel {
-  padding: 1rem;
-}
 
 div#map {
   min-height: 360px;
+  
 }
 
