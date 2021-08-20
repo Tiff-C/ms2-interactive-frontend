@@ -125,9 +125,10 @@ div.card-body {
   border: 0.15rem solid #131925;
 }
 
-.card-img-top{
-  max-height: 40vh
+.card image.card-img-top {
+  height: 195px;
 }
+
 
 /******************** accomodation.html ********************/
 
