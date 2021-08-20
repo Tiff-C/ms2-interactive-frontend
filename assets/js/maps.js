@@ -21,7 +21,7 @@
     myLatLng.lng = parseInt(myLng);
 
     let map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
+      zoom: 8,
       center: myLatLng,
     });
     new google.maps.Marker({

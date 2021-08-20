@@ -64,7 +64,7 @@ function displayMapMarker(city){
       myLng = hotel.Longitude;
     }
 
-    console.log(typeof(myLat,myLng));
+    console.log(myLat,myLng);
 
     return myLat, myLng;
 }
