@@ -126,9 +126,17 @@ div.card-body {
 }
 
 .card image.card-img-top {
-  height: 195px;
+  height: 180px;
 }
 
+
+/******************** destinations.html ********************/
+
+.accordian-image img {
+  margin: auto;
+  display: block;
+  padding-bottom: 1rem;
+}
 
 /******************** accomodation.html ********************/
 
