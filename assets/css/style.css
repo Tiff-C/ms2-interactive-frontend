@@ -136,8 +136,29 @@ div.card-body {
   margin: auto;
   display: block;
   padding-bottom: 1rem;
+  max-width: 100%;
 }
 
+.accordion-button:not(.collapsed) {
+  color: #f1f1f1;
+  background-color: #313a33;
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #f1f1f1;
+  text-align: left;
+  background-color: #313a33;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
 /******************** accomodation.html ********************/
 
 .info-box {
